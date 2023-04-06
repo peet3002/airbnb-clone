@@ -19,13 +19,13 @@ const UserMenu = () => {
       <div className="flex flex-row items-center gap-3">
         <div
           onClick={() => {}}
-          className="hidden px-4 py-3 text-sm font-semibold transition rounded-full md:block hover:bg-neutral-100 cusor-pointer"
+          className="cusor-pointer hidden rounded-full px-4 py-3 text-sm font-semibold transition hover:bg-neutral-100 md:block"
         >
           Airbnb your home
         </div>
         <div
           onClick={toggleOpen}
-          className="p-4 md:p-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-md transition"
+          className="flex cursor-pointer flex-row items-center gap-3 rounded-full border-[1px] border-neutral-200 p-4 transition hover:shadow-md md:p-2"
         >
           <AiOutlineMenu />
           <div className="hidden md:block">
@@ -35,8 +35,8 @@ const UserMenu = () => {
       </div>
 
       {isOpen && (
-        <div className="absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm">
-          <div className="flex flex-col cursor-pointer">
+        <div className="absolute right-0 top-12 w-[40vw] overflow-hidden rounded-xl bg-white text-sm shadow-md md:w-3/4">
+          <div className="flex cursor-pointer flex-col">
             <>
               <MenuItem onClick={() => {}} label="Login" />
               <MenuItem onClick={registerModal.onOpen} label="Sign up" />
