@@ -10,8 +10,10 @@ const Logo = () => {
     <Image
       alt="Logo"
       className="hidden cursor-pointer md:block"
-      height="100"
-      width="100"
+      height={100}
+      width={100}
+      style={{ width: 'auto', height: 'auto' }}
+      priority
       src="/image/logo.png"
     />
   )
